@@ -69,10 +69,11 @@ section,
 
 .header-links a {
   border-radius: 9999px;
-  color: #e5e7eb;
+  border: solid black 2px;
+  color: black;
   font-weight: bold;
   font-size: 18px;
-  background-color: rgb(0, 0, 0);
+  background-color: white;
   margin-left: 12px;
   padding: 8px 20px;
 }

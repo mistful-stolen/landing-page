@@ -15,9 +15,12 @@ h1 {
   padding: 0%;
 }
 
-header,
+header {
+  background-color: orange;
+}
+
 main {
-  background-color: #1f2937;
+  background: linear-gradient(orange 50%, white);
 }
 
 .header,
@@ -83,27 +86,43 @@ section,
   column-gap: 100px;
 }
 
+.hero-text {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  border: solid black 2px;
+}
+
 .hero-text * {
   margin-bottom: 10px;
 }
 
 .hero-text h1 {
-  max-width: 250px;
+  max-width: 350px;
+  font-size: 48px;
+  font-weight: bolder;
+  color: black;
 }
 
 .hero-text p {
-  max-width: 300px;
+  max-width: 400px;
+  font-size: 18px;
+  color: black;
 }
 
 .hero-img {
   width: 450px;
   height: auto;
+  border-radius: 75px;
+  border: black solid 2px;
 }
 
 .hero-sign-up {
   display: inline-block;
   padding: 8px 16px;
-  background: linear-gradient(orange, rgba(255, 166, 0, 0.37));
+  background-color: rgba(255, 166, 0, 0.637);
+  border-radius: 8px;
+  color: black;
 }
 
 .hero-neko {
@@ -115,6 +134,6 @@ section,
 }
 
 .hero-neko:hover {
-  color: white;
+  color: black;
   transition: ease-in-out 0.1s;
 }

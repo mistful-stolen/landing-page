@@ -41,25 +41,40 @@ section,
 .header-logo {
   display: flex;
   align-items: center;
-  color: #f9faf8;
+  color: white;
   font-size: 24px;
-  column-gap: 12px;
 }
 
-.header-icon {
+.header-icon-left,
+.header-icon-right {
   width: 50px;
   height: 50px;
-  border: solid white 4px;
-  border-radius: 2px;
+  border: solid 4px;
   transition: ease-in-out 0.5s transform;
 }
 
-.header-icon:hover {
-  transform: rotateZ(720deg);
-  border-radius: 10px;
-  background-color: white;
-  border: transparent 4px solid;
-  transition: ease-in-out 0.5s;
+.header-icon-left {
+  border-top: transparent;
+  border-right: transparent;
+
+  background: linear-gradient(45deg, white 50%, transparent 50%);
+}
+.header-icon-right {
+  border-top: transparent;
+  border-left: transparent;
+  background: linear-gradient(135deg, transparent 50%, white 50%);
+}
+
+.header-icon-left::after {
+  content: "o";
+  margin: 30px;
+  color: white;
+}
+
+.header-icon-right::after {
+  content: "o";
+  margin: 6px;
+  color: white;
 }
 
 .header-links {

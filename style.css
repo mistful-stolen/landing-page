@@ -215,12 +215,13 @@ section {
 /* Section 2 begins here */
 
 .quote {
+  /* Background */
   background: url(./pictures/the-little-prince.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 100%;
-  height: 100%;
+  background-attachment: fixed;
+  /* Flex */
   display: flex;
   justify-content: center;
 }

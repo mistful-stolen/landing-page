@@ -211,3 +211,23 @@ section {
   border: 2px black solid;
   box-shadow: 2px 2px 1px black;
 }
+
+/* Section 2 begins here */
+
+.quote {
+  background: url(./pictures/the-little-prince.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.quote div {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}

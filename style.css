@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  color: white;
+
   font-family: sans-serif;
 }
 
@@ -99,6 +99,11 @@ section,
   align-items: center;
 }
 
+.header-links a:nth-child(1) {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
 .header-links a {
   border-radius: 9999px;
   border: solid black 2px;
@@ -177,3 +182,8 @@ section,
 }
 
 /* Section 1 starts here */
+
+.fox-crew-part div img {
+  width: 300px;
+  height: 300px;
+}

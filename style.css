@@ -227,8 +227,15 @@ section {
 }
 
 .quote div {
+  /* Flex */
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-end;
   justify-content: space-between;
+  /* Style */
+  background-color: lightgrey;
+  border-radius: 25px;
+  border: black 2px solid;
+  box-shadow: 2px 2px 1px black;
+  padding: 25px 50px;
 }

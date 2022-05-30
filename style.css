@@ -10,7 +10,12 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: rgba(17, 0, 255, 1);
+}
+
+.nut-room:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 p,
@@ -127,7 +132,7 @@ section,
 }
 
 .hero-text h1 {
-  max-width: 350px;
+  max-width: 400px;
   font-size: 48px;
   font-weight: bolder;
   color: black;

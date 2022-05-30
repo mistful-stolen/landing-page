@@ -5,16 +5,18 @@ body {
   font-family: sans-serif;
 }
 
-@keyframes startup {
-}
-
 a {
   text-decoration: none;
+  color: black;
+}
+
+p a {
   color: rgba(17, 0, 255, 1);
 }
 
 p a:hover {
   text-decoration: underline;
+
   text-decoration-thickness: 2px;
 }
 

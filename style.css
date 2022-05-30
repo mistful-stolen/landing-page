@@ -25,11 +25,12 @@ h1 {
 }
 
 header {
-  background-color: orange;
+  background-color: lightslategray;
+  border-bottom: 2px black solid;
 }
 
 main {
-  background: linear-gradient(orange 50%, white);
+  background: linear-gradient(grey 80%, white);
 }
 
 .header,
@@ -155,7 +156,7 @@ section,
 .hero-sign-up {
   display: inline-block;
   padding: 8px 16px;
-  background-color: rgba(255, 166, 0, 0.637);
+  background-color: lightgrey;
   border-radius: 8px;
   color: black;
   border: solid 2px black;

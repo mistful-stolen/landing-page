@@ -2,6 +2,10 @@ body {
   margin: 0;
   padding: 0;
   color: white;
+  font-family: sans-serif;
+}
+
+@keyframes startup {
 }
 
 a {
@@ -53,19 +57,12 @@ section,
 .header-icon-right {
   width: 50px;
   height: 50px;
-  border: solid 4px;
-  transition: ease-in-out 0.5s transform;
 }
 
 .header-icon-left {
-  border-top: transparent;
-  border-right: transparent;
-
   background: linear-gradient(45deg, white 50%, transparent 50%);
 }
 .header-icon-right {
-  border-top: transparent;
-  border-left: transparent;
   background: linear-gradient(135deg, transparent 50%, white 50%);
 }
 
@@ -79,6 +76,16 @@ section,
   content: "o";
   margin: 6px;
   color: white;
+}
+
+.header-icon-right:hover::after {
+  transition: 0.5s;
+  margin: 10px;
+}
+
+.header-icon-left:hover::after {
+  transition: 0.5s;
+  margin: 26px;
 }
 
 .header-links {
@@ -95,6 +102,7 @@ section,
   background-color: white;
   margin-left: 12px;
   padding: 8px 20px;
+  box-shadow: 2px 2px 1px black;
 }
 
 /* Hero starts here! */
@@ -111,6 +119,7 @@ section,
   padding: 20px;
   border-radius: 15px;
   border: solid black 2px;
+  box-shadow: 2px 2px 1px black;
 }
 
 .hero-text * {
@@ -135,6 +144,7 @@ section,
   height: auto;
   border-radius: 75px;
   border: black solid 2px;
+  box-shadow: 2px 2px 1px black;
 }
 
 .hero-sign-up {
@@ -143,6 +153,8 @@ section,
   background-color: rgba(255, 166, 0, 0.637);
   border-radius: 8px;
   color: black;
+  border: solid 2px black;
+  box-shadow: 2px 2px 1px black;
 }
 
 .hero-neko {
@@ -157,3 +169,5 @@ section,
   color: black;
   transition: ease-in-out 0.1s;
 }
+
+/* Section 1 starts here */

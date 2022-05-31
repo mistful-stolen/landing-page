@@ -65,6 +65,11 @@ main {
 }
 
 .fox-crew {
+  padding: 75px 0 150px 0;
+}
+
+.quote {
+  padding: 150px 0;
 }
 
 .call-to-action {
@@ -218,17 +223,17 @@ h1 {
 
 /* Section 1 starts here */
 
-section {
-  padding: 0%;
-  margin: 0%;
-}
-
 .fox-crew {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   row-gap: 30px;
   font-size: 30px;
+}
+
+.fox-crew h1 {
+  padding: 0;
+  margin: 0;
 }
 
 .fox-crew-part {
@@ -268,12 +273,18 @@ section {
   flex-flow: column nowrap;
   align-items: flex-end;
   justify-content: space-between;
+  row-gap: 25px;
   /* Style */
   background-color: lightgrey;
   border-radius: 25px;
   border: black 2px solid;
   box-shadow: 2px 2px 1px black;
   padding: 25px 50px;
+}
+
+.quote div h1 {
+  margin: 0%;
+  padding: 0%;
 }
 
 /* section 3 Sign Up begins here */

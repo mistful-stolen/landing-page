@@ -312,6 +312,7 @@ p {
 
   background-color: rgb(133, 207, 231);
   padding: 30px 200px;
+  border-radius: 6px;
 }
 
 .call-text div {

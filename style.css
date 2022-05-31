@@ -1,16 +1,8 @@
-body {
+* {
   margin: 0;
   padding: 0;
 
   font-family: sans-serif;
-}
-
-header {
-  padding: 10px 24px;
-}
-
-footer {
-  padding: 24px 0;
 }
 
 a {
@@ -28,15 +20,6 @@ small a:hover {
   text-decoration: underline;
 
   text-decoration-thickness: 2px;
-}
-
-header {
-  background-color: lightslategray;
-  border-bottom: 2px black solid;
-}
-
-main {
-  background-color: darkgrey;
 }
 
 /* Scrollbar */
@@ -60,6 +43,10 @@ main {
 
 /* Section paddings */
 
+.header {
+  padding: 10px 24px;
+}
+
 .hero {
   padding: 150px 0;
 }
@@ -76,12 +63,20 @@ main {
   padding: 100px 0;
 }
 
+.footer {
+  padding: 24px 0;
+}
+
 /* Header section */
 .header {
   /* flex */
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  /* Style */
+  background-color: lightslategray;
+  border-bottom: 2px black solid;
 }
 
 .header-logo {
@@ -101,6 +96,8 @@ main {
   height: 50px;
 }
 
+/* Icon */
+
 .header-icon-left {
   background: linear-gradient(45deg, white 50%, transparent 50%);
 }
@@ -111,12 +108,15 @@ main {
 .header-icon-left::after {
   content: "o";
   margin: 30px;
-  color: white;
 }
 
 .header-icon-right::after {
   content: "o";
   margin: 6px;
+}
+
+.header-icon-left::after,
+.header-icon-right::after {
   color: white;
 }
 
@@ -130,26 +130,27 @@ main {
   margin: 26px;
 }
 
+/* Header links */
+
 .header-links {
   display: flex;
   align-items: center;
 }
 
-.header-links a:nth-child(1) {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-}
-
 .header-links a {
+  background-color: white;
   border-radius: 9999px;
-  border: solid black 2px;
+
   color: black;
   font-weight: bold;
   font-size: 18px;
-  background-color: white;
   margin-left: 12px;
   padding: 8px 20px;
-  box-shadow: 2px 2px 1px black;
+}
+
+.header-links a:nth-child(1) {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 /* Hero starts here! */
@@ -159,44 +160,35 @@ main {
   align-items: center;
   justify-content: center;
   column-gap: 100px;
+  background-color: darkgrey;
 }
 
 .hero-text {
   background-color: white;
   padding: 20px;
   border-radius: 15px;
-  border: solid black 2px;
-  box-shadow: 2px 2px 1px black;
 }
 
-.hero-text h1 {
-  max-width: 400px;
-  font-size: 48px;
-  margin-top: 0%;
-  margin-bottom: 10px;
+/* Hero font */
 
-  font-weight: bolder;
-  color: black;
+.hero-text h1 {
+  font-size: 48px;
 }
 
 .hero-text p {
-  max-width: 400px;
   font-size: 18px;
-  margin: 0%;
-  color: black;
 }
 
 .hero-text p,
 h1 {
-  margin-bottom: 10px;
+  max-width: 400px;
+  margin-bottom: 16px;
 }
 
 .hero-img {
   width: 450px;
   height: auto;
   border-radius: 75px;
-  border: black solid 2px;
-  box-shadow: 2px 2px 1px black;
 }
 
 .hero-sign-up {
@@ -205,21 +197,6 @@ h1 {
   background-color: lightgrey;
   border-radius: 8px;
   color: black;
-  border: solid 2px black;
-  box-shadow: 2px 2px 1px black;
-}
-
-.hero-neko {
-  display: inline-block;
-  color: transparent;
-  margin-left: 10px;
-  width: 175px;
-  font-size: smaller;
-}
-
-.hero-neko:hover {
-  color: black;
-  transition: ease-in-out 0.1s;
 }
 
 /* Section 1 starts here */
@@ -250,8 +227,6 @@ h1 {
   width: 300px;
   height: 300px;
   border-radius: 75px;
-  border: 2px black solid;
-  box-shadow: 2px 2px 1px black;
 }
 
 /* Section 2 begins here */
@@ -278,32 +253,30 @@ h1 {
   /* Style */
   background-color: lightgrey;
   border-radius: 25px;
-  border: black 2px solid;
-  box-shadow: 2px 2px 1px black;
+
   padding: 25px 50px;
 }
 
-.quote div h1 {
+.quote * {
   margin: 0%;
   padding: 0%;
 }
 
 /* section 3 Sign Up begins here */
 
-.call-to-action {
+.call-to-action,
+.call-text {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
 }
 
-.call-text h2,
-p {
+.call-text * {
   margin: 0%;
   padding: 0%;
 }
 
 .call-text {
-  display: flex;
-  flex-flow: row nowrap;
   align-items: center;
 
   column-gap: 125px;
@@ -319,6 +292,9 @@ p {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
+}
+
+.call-text * {
   color: white;
 }
 
@@ -327,11 +303,12 @@ p {
 }
 
 .call-text a {
-  color: white;
   border: 2px white solid;
   padding: 3px 24px;
   border-radius: 5px;
 }
+
+/* Footer starts here */
 
 .footer {
   background-color: lightgrey;
@@ -340,4 +317,16 @@ p {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+}
+
+/* Box shadows */
+
+.header-links a,
+.hero-text,
+.hero-img,
+.hero-sign-up,
+.fox-crew-part div img,
+.quote div {
+  box-shadow: 2px 2px 1px black;
+  border: solid black 2px;
 }

@@ -10,11 +10,13 @@ a {
   color: black;
 }
 
-p a {
+p a,
+small a {
   color: rgba(17, 0, 255, 1);
 }
 
-p a:hover {
+p a:hover,
+small a:hover {
   text-decoration: underline;
 
   text-decoration-thickness: 2px;
@@ -257,12 +259,24 @@ p {
 
   /* Style */
 
-  background-color: orange;
-  padding: 25px 75px;
+  background-color: rgb(133, 207, 231);
+  padding: 30px 200px;
 }
 
 .call-text div {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
+  color: white;
+}
+
+.call-text div h2 {
+  font-size: 24px;
+}
+
+.call-text a {
+  color: white;
+  border: 2px white solid;
+  padding: 3px 24px;
+  border-radius: 5px;
 }

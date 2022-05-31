@@ -280,3 +280,12 @@ p {
   padding: 3px 24px;
   border-radius: 5px;
 }
+
+.footer {
+  background-color: lightgrey;
+  /* Style */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}

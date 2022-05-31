@@ -242,6 +242,12 @@ section {
   justify-content: center;
 }
 
+.call-text h2,
+p {
+  margin: 0%;
+  padding: 0%;
+}
+
 .call-text {
   display: flex;
   flex-flow: row nowrap;
@@ -252,6 +258,7 @@ section {
   /* Style */
 
   background-color: orange;
+  padding: 25px 75px;
 }
 
 .call-text div {

@@ -29,13 +29,6 @@ main {
   background-color: darkgrey;
 }
 
-.header,
-.hero,
-section,
-.footer {
-  padding: 12px 48px;
-}
-
 /* Header section */
 .header {
   /* flex */
@@ -240,4 +233,29 @@ section {
   border: black 2px solid;
   box-shadow: 2px 2px 1px black;
   padding: 25px 50px;
+}
+
+/* section 3 Sign Up begins here */
+
+.call-to-action {
+  display: flex;
+  justify-content: center;
+}
+
+.call-text {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  column-gap: 125px;
+
+  /* Style */
+
+  background-color: orange;
+}
+
+.call-text div {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
 }

@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  padding: 12px 12px;
+  padding: 10px 24px;
 }
 
 footer {
@@ -56,6 +56,18 @@ main {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgb(153, 153, 153);
+}
+
+/* Section paddings */
+
+.hero {
+  padding: 150px 0;
+}
+
+.fox-crew {
+}
+
+.call-to-action {
 }
 
 /* Header section */
